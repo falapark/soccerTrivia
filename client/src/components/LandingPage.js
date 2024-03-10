@@ -9,7 +9,7 @@ const categories = [
   { name: 'Clubs', image: 'clubs.svg',  class: 'clubs' },
   { name: 'International Teams', image: 'international-teams.svg', class: 'international-teams' },
   { name: 'Soccer Geography', image: 'soccer-geography.svg',  class: 'soccer-geography' },
-  { name: 'Guess The Player', image: 'guess-the-player.svg',  class: 'guess-the' }, // Removed duplicate entry
+  { name: 'Guess The Player', image: 'guess-the-player.svg',  class: 'guess-the' },
   { name: 'Players', image: 'players.svg',  class: 'players' },
   // ... other categories
 ];

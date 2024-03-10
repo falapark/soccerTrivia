@@ -15,6 +15,7 @@
 .leaderboard-section {
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
   color: #333333; /* Darker text color for better contrast */
+  transition: transform 0.3s ease;
   padding: 20px;
   border-radius: 10px;
   margin: 20px 0;
@@ -62,8 +63,8 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 200px;
-  height: 150px;
+  width: 200px; /* Fixed width for all category cards */
+  height: 150px; /* Fixed height for all category cards */
   width: 200px; /* Fixed width for all category cards */
   height: 150px; /* Fixed height for all category cards */
   display: flex;
@@ -72,7 +73,6 @@
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  overflow: hidden; /* Ensure the image does not overflow the card */
 }
 
  .category-image {
@@ -90,34 +90,6 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Specific hover colors for each category */
-.category-card.challenge:hover {
-  background-color: #FE0001;
-}
-
-.category-card.guess-the:hover {
-  background-color: #754C24;
-}
-
-.category-card.soccer-geography:hover {
-  background-color: #03A551;
-}
-
-.category-card.managers:hover {
-  background-color: #FF7701;
-}
-
-.category-card.clubs:hover {
-  background-color: #0003FF;
-}
-
-.category-card.international-teams:hover {
-  background-color: #666666;
-}
-
-.category-card.players:hover {
-  background-color: #2E3192;
-}
 .cta-button {
   background-color: #333333; /* Dark button for contrast */
   color: #ffffff; /* White text for readability */
