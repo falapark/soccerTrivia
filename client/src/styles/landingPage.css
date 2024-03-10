@@ -1,6 +1,5 @@
 .landing-page {
-  background-image: url('/client/public/background.jpg'); /* Background image */
-  background-image: url('../../public/background.jpg'); /* Corrected relative path */
+  background-image: url('../../public/background.svg'); /* Corrected relative path */
   color: #ecf0f1;
   font-family: 'Open Sans', sans-serif;
 }
