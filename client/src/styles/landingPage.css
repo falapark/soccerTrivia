@@ -1,8 +1,10 @@
 .landing-page {
-  background-image: url('/public/background.svg'); /* Corrected relative path */
+  background-image: url('/public/background.svg'); /* Ensure the image covers the entire viewport */
 
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed; /* Make background fixed instead of scrolling */
+  min-height: 100vh; /* Minimum height to cover the full viewport height */
   color: #ffffff; /* Brighter text color for better contrast */
   font-family: 'Open Sans', sans-serif;
 }
