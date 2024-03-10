@@ -19,6 +19,7 @@
   text-align: center;
   margin-top: 0; /* Remove any top margin from the h1 heading */
   padding-top: 0; /* Remove any top padding from the h1 heading */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for title */
 }
 
 .leaderboard-section {
@@ -198,6 +199,7 @@ p{
   text-align: center;
   margin-top: 0;
   padding-top: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for tagline */
 }
 tr:nth-child(1) .leaderboard td {
   font-weight: bold; /* Emphasize the names on the leaderboard */
