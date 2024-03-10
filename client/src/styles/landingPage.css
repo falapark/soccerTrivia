@@ -1,5 +1,5 @@
 .landing-page {
-  background-image: url('../../public/background.svg'); /* Corrected relative path */
+  background-image: url('/public/background.svg'); /* Corrected relative path */
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -63,8 +63,8 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 250px; /* Increased width for all category cards */
-  height: 200px; /* Increased height for all category cards */
+  width: 200px; /* Fixed width for all category cards */
+  height: 150px; /* Fixed height for all category cards */
   width: 200px; /* Fixed width for all category cards */
   height: 150px; /* Fixed height for all category cards */
   display: flex;
@@ -81,7 +81,7 @@
    object-fit: cover; /* Ensure the image covers the card area */
    border-radius: 5px; /* Optional: round corners to match the card */
  }
-  text-decoration: none; /* This line was duplicated, so one is removed */
+  text-decoration: none; /* Remove underline from links */
   text-decoration: none; /* Remove underline from links */
 }
 
