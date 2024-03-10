@@ -63,7 +63,6 @@ const LandingPage = () => {
     </div>
   );
 };
-import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   return (
