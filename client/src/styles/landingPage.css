@@ -26,9 +26,11 @@
 }
 
 p {
-  font-family: 'Open Sans', sans-serif; /* Modern sans-serif font for supporting text */
-  font-weight: 400; /* Normal font weight for supporting text */
-  font-size: 1em; /* Smaller font size than the title for supporting text */
+  font-size: 1.2em; /* Adjust as needed */
+  font-weight: 400; /* Adjust as needed */
+  font-family: 'Open Sans', sans-serif; /* Example font */
+  color: #E0E0E0; /* Light gray for consistency */
+  letter-spacing: 0.05em; /* Add spacing between letters */
 }
 
 .leaderboard-section {
