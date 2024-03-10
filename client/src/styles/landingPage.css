@@ -1,5 +1,5 @@
 .landing-page {
-  background-color: #60a917; /* Soccer field green */
+  background-image: url('../assets/images/background.jpg'); /* Background image */
   color: #ecf0f1;
   font-family: 'Open Sans', sans-serif;
 }
