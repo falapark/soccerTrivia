@@ -7,7 +7,7 @@
     margin-bottom: 30px;
   }
   
-  .categories {
+  .category-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -15,7 +15,7 @@
   }
   
   .category-card {
-    width: 150px;
+    width: 100%;
     padding: 20px;
     background-color: #007BFF;
     color: white;
