@@ -221,7 +221,7 @@ tr .leaderboard td:hover {
 }
 
 tr:nth-child(1) td {
-  background-color: #ffd700; /* Gold color for the top player */
+  background-color: #2d8049; /* Gold color for the top player */
 }
 
 tr:nth-child(1) td::before {
