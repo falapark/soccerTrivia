@@ -104,6 +104,7 @@
   align-items: center;
   cursor: pointer;
   text-decoration: none;
+  overflow: hidden; /* Ensure the pseudo-element does not overflow the card */
 }
 
  .category-image {
@@ -115,6 +116,16 @@
   text-decoration: none; /* Remove underline from links */
   text-decoration: none; /* Remove underline from links */
 }
+
+ .category-card::before {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 30%; /* Height of the gradient overlay */
+   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent); /* Dark gradient overlay */
+ }
 
 .category-card:hover {
   transform: translateY(-5px) scale(1.05); /* Subtle scale transform on hover */
