@@ -2,13 +2,14 @@ import React from 'react';
 import '../styles/landingPage.css';
 
 const categories = [
-  { name: 'Clubs', icon: 'science-icon' },
-  { name: 'Managers', icon: 'math-icon' },
-  { name: 'Challenge', icon: 'math-icon' },
-  { name: 'Clubs', icon: 'math-icon' },
-  { name: 'Internaltional Teams', icon: 'math-icon' },
-  { name: 'Soccer Geography', icon: 'math-icon' },
-  { name: 'Guess The Player', icon: 'math-icon' },
+
+  { name: 'Managers', icon: 'math-icon',  class: 'managers'},
+  { name: 'Challenge', icon: 'math-icon',  class: 'challenge' },
+  { name: 'Clubs', icon: 'math-icon',  class: 'clubs' },
+  { name: 'International Teams', icon: 'math-icon', class: 'international-teams' },
+  { name: 'Soccer Geography', icon: 'math-icon',  class: 'soccer-geography' },
+  { name: 'Guess The Player', icon: 'math-icon',  class: 'guess-the' },
+  { name: 'Players', icon: 'math-icon',  class: 'players' },
   // ... other categories
 ];
 
@@ -51,7 +52,7 @@ const LandingPage = () => {
         <p>Click on a category below to start the quiz!</p>
         <div className="category-grid">
           {categories.map((category, index) => (
-            <div className="category-card" key={index}>
+            <div className={`category-card ${category.class}`} key={index}>
               <div className={category.icon}></div>
               <h3>{category.name}</h3>
             </div>
