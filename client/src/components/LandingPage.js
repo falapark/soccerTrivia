@@ -48,6 +48,10 @@ const LandingPage = () => {
           </tbody>
         </table>
       </div>
+const LandingPage = () => {
+  return (
+    <div className="landing-page">
+      // ... other sections
       <div className="category-section">
         <h2>Quiz Categories</h2>
         <p>Click on a category below to start the quiz!</p>
@@ -55,7 +59,6 @@ const LandingPage = () => {
           {categories.map((category, index) => (
             <Link to="/main" className={`category-card ${category.class}`} key={index}>
               <img src={`/public/${category.image}`} alt={category.name} className="category-image" />
-              <h3>{category.name}</h3>
             </Link>
           ))}
         </div>
