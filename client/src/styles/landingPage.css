@@ -26,6 +26,7 @@
   transition: transform 0.3s ease;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial subtle shadow */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle white border */
   border-radius: 10px;
   margin: 20px 0;
 }
