@@ -13,8 +13,9 @@
 }
 
 .intro-section h1 {
-  font-size: 2.5em; /* Increased font size for h1 headings */
-  font-family: 'Roboto', sans-serif; /* More modern font */
+  font-size: 3em; /* Larger font size for title to be the focal point */
+  font-family: 'Montserrat', sans-serif; /* Bold, sans-serif font for the title */
+  font-weight: bold; /* Ensure the title is bold */
   text-align: center;
   margin-top: 0; /* Remove any top margin from the h1 heading */
   padding-top: 0; /* Remove any top padding from the h1 heading */
@@ -191,7 +192,9 @@ tr .leaderboard td {
 }
 
 p{
-  font-size: 1.5em;
+  font-size: 1.2em; /* Slightly smaller font size for the tagline */
+  font-family: 'Roboto Condensed', sans-serif; /* Lighter weight of the same font family for tagline */
+  font-weight: 300; /* Lighter font weight for contrast */
   text-align: center;
   margin-top: 0;
   padding-top: 0;
