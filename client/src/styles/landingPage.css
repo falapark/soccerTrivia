@@ -68,9 +68,36 @@
 .category-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  background-color: #8cc63f; /* New hover color */
 }
 
+/* Specific hover colors for each category */
+.category-card.challenge:hover {
+  background-color: #FE0001;
+}
+
+.category-card.guess-the:hover {
+  background-color: #754C24;
+}
+
+.category-card.soccer-geography:hover {
+  background-color: #03A551;
+}
+
+.category-card.managers:hover {
+  background-color: #FF7701;
+}
+
+.category-card.clubs:hover {
+  background-color: #0003FF;
+}
+
+.category-card.international-teams:hover {
+  background-color: #666666;
+}
+
+.category-card.players:hover {
+  background-color: #2E3192;
+}
 .cta-button {
   background-color: #fff;
   color: #60a917;
