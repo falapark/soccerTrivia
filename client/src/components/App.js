@@ -17,21 +17,23 @@ import LandingPage from './LandingPage';
 /**react routes */
 const router = createBrowserRouter([
   {
+    path: '/',
+    element: <LandingPage />
     path: '/', // Add this line
     element: <LandingPage /> // And this line
   },
   {
     path: '/main',
-    element: <Main></Main>
+    element: <Main />
   },
   {
     path: '/quiz',
-    element: <CheckUserExist><Quiz></Quiz></CheckUserExist>
+    element: <CheckUserExist><Quiz /></CheckUserExist>
   },
 
   {
     path: '/result',
-    element: <CheckUserExist><Result></Result></CheckUserExist>
+    element: <CheckUserExist><Result /></CheckUserExist>
   }
 
 ])
