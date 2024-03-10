@@ -56,8 +56,6 @@
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
   color: #333333; /* Darker text color for better contrast */
 .category-card {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #333333;
   transition: transform 0.3s ease;
   padding: 20px;
   border-radius: 10px;
