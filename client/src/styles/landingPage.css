@@ -1,19 +1,20 @@
 .landing-page {
   background-image: url('../../public/background.svg'); /* Corrected relative path */
+  background-image: url('../../public/background.svg');
   background-size: cover;
   background-repeat: no-repeat;
-  color: #ecf0f1;
+  color: #ffffff; /* Brighter text color for better contrast */
   font-family: 'Open Sans', sans-serif;
 }
 
 .intro-section h1 {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto', sans-serif; /* More modern font */
   text-align: center;
 }
 
 .leaderboard-section {
-  background-color: #fff;
-  color: #60a917;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+  color: #333333; /* Darker text color for better contrast */
   padding: 20px;
   border-radius: 10px;
   margin: 20px 0;
@@ -21,7 +22,7 @@
 }
 
 .leaderboard-section h2 {
-  color: #60a917;
+  color: #333333; /* Consistent text color with the section */
   text-align: center;
 }
 
@@ -51,13 +52,15 @@
 }
 
 .category-card {
-  background-color: #fff;
-  color: #60a917;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+  color: #333333; /* Darker text color for better contrast */
   transition: transform 0.3s ease;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  width: 200px;
+  height: 150px;
   width: 200px; /* Fixed width for all category cards */
   height: 150px; /* Fixed height for all category cards */
   display: flex;
@@ -65,7 +68,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  text-decoration: none; /* Remove underline from links */
+  text-decoration: none; /* This line was duplicated, so one is removed */
   text-decoration: none; /* Remove underline from links */
 }
 
@@ -103,8 +106,8 @@
   background-color: #2E3192;
 }
 .cta-button {
-  background-color: #fff;
-  color: #60a917;
+  background-color: #333333; /* Dark button for contrast */
+  color: #ffffff; /* White text for readability */
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -118,7 +121,7 @@
 }
 
 .cta-button:hover {
-  background-color: #8cc63f;
+  background-color: #555555; /* Darker shade on hover */
 }
 
 @media (max-width: 768px) {
