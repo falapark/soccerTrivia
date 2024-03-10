@@ -1,40 +1,25 @@
 .landing-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Full viewport height */
-  text-align: center;
-  background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay for better readability */
-  padding: 0;
-  margin: 0;
+  background-image: url('/public/background.svg'); /* Ensure the image covers the entire viewport */
 
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; /* Make background fixed instead of scrolling */
   min-height: 100vh; /* Minimum height to cover the full viewport height */
   background-position: top center; /* Ensure the background starts from the top */
-  font-size: 1.2em;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 300;
-  text-align: center;
-  margin: 0; /* Remove margin to help with vertical centering */
-  padding: 0.5rem; /* Add padding for spacing */
-  color: #ffffff;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  color: #ffffff; /* Updated color for the title to pop against a dark background */
+  font-family: 'Roboto', sans-serif; /* Modern, web-safe font for better readability */
+  margin-top: 0; /* Remove any margin at the top that might cause black space */
+  padding-top: 0; /* Remove any padding at the top that might cause black space */
 }
 
 .intro-section h1 {
-  font-size: 3em;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+  font-size: 3em; /* Larger font size for title to be the focal point */
+  font-family: 'Montserrat', sans-serif; /* Bold, sans-serif font for the title */
+  font-weight: bold; /* Ensure the title is bold */
   text-align: center;
-  margin: 0; /* Remove margin to help with vertical centering */
-  padding: 0.5rem; /* Add padding for spacing */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  position: relative; /* Position relative to the parent */
-  top: 50%;
-  transform: translateY(-50%);
+  margin-top: 0; /* Remove any top margin from the h1 heading */
+  padding-top: 0; /* Remove any top padding from the h1 heading */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for title */
 }
 
 .leaderboard-section {
@@ -46,6 +31,7 @@
   border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle white border */
   border-radius: 5px; /* Match border-radius with category tiles */
   margin: 20px 0;
+  width: 80%;
 }
 
 .leaderboard-section h2 {
