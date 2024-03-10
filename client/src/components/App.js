@@ -18,9 +18,7 @@ import LandingPage from './LandingPage';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <LandingPage />
-    path: '/', // Add this line
-    element: <LandingPage /> // And this line
+    element: <LandingPage />,
   },
   {
     path: '/main',
