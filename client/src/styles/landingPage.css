@@ -21,6 +21,7 @@
 
 .leaderboard-section {
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), rgba(255, 255, 255, 0.8);
   color: #333333; /* Darker text color for better contrast */
   transition: transform 0.3s ease;
   padding: 20px;
@@ -66,16 +67,16 @@
   transition: transform 0.3s ease;
   padding: 20px;
 .category-card {
+  padding: 15px; /* Adjust padding to ensure uniformity */
   background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent dark overlay */
   color: #ffffff; /* White text for readability */
   font-size: 18px; /* Increased font size for category names */
   transition: transform 0.3s ease, scale 0.3s ease; /* Added scale animation */
-  padding: 30px; /* Increased padding around text */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 200px;
-  height: 150px;
+  width: 180px; /* Adjusted width for consistency */
+  height: 130px; /* Adjusted height for consistency */
   width: 200px; /* Fixed width for all category cards */
   height: 150px; /* Fixed height for all category cards */
   width: 200px; /* Fixed width for all category cards */
