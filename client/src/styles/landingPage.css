@@ -1,6 +1,6 @@
 .landing-page {
   background-image: url('../../public/background.svg'); /* Corrected relative path */
-  background-image: url('../../public/background.svg');
+
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff; /* Brighter text color for better contrast */
