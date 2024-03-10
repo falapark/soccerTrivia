@@ -95,7 +95,7 @@
   background-color: #FE0001;
 }
 
-.category-card.guess-the:hover {
+.category-card.guess-the-player:hover { // Changed from 'guess-the' to 'guess-the-player'
   background-color: #754C24;
 }
 
@@ -111,7 +111,7 @@
   background-color: #0003FF;
 }
 
-.category-card.international-teams:hover {
+.category-card.international-teams:hover { // Ensuring this class is correct
   background-color: #666666;
 }
 
