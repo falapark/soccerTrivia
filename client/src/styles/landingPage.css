@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@700&display=swap');
+
 .landing-page {
   background-image: url('/public/background.svg'); /* Ensure the image covers the entire viewport */
 
@@ -7,19 +9,26 @@
   min-height: 100vh; /* Minimum height to cover the full viewport height */
   background-position: top center; /* Ensure the background starts from the top */
   color: #ffffff; /* Updated color for the title to pop against a dark background */
+  font-family: 'Open Sans', sans-serif; /* Modern, web-safe font for better readability */
   font-family: 'Roboto', sans-serif; /* Modern, web-safe font for better readability */
   margin-top: 0; /* Remove any margin at the top that might cause black space */
   padding-top: 0; /* Remove any padding at the top that might cause black space */
 }
 
 .intro-section h1 {
-  font-size: 3em; /* Larger font size for title to be the focal point */
-  font-family: 'Montserrat', sans-serif; /* Bold, sans-serif font for the title */
-  font-weight: bold; /* Ensure the title is bold */
+  font-size: 4em; /* Increased font size for title to be the focal point */
+  font-family: 'Poppins', sans-serif; /* Bold, modern sans-serif font for the title */
+  font-weight: 700; /* Increased font weight to make it stand out */
   text-align: center;
   margin-top: 0; /* Remove any top margin from the h1 heading */
   padding-top: 0; /* Remove any top padding from the h1 heading */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for title */
+}
+
+p {
+  font-family: 'Open Sans', sans-serif; /* Modern sans-serif font for supporting text */
+  font-weight: 400; /* Normal font weight for supporting text */
+  font-size: 1em; /* Smaller font size than the title for supporting text */
 }
 
 .leaderboard-section {
