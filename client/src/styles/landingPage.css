@@ -1,0 +1,33 @@
+.landing-page {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .title {
+    margin-bottom: 30px;
+  }
+  
+  .categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .category-card {
+    width: 150px;
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .category-card a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .leaderboard {
+    margin-top: 50px;
+  }
+  
