@@ -11,7 +11,6 @@ const categories = [
   'Soccer Clubs',
   'Great Soccer Matches'
 ];
-import '../styles/landingPage.scss'; // Assuming you will use SCSS for advanced styling
 
 const LandingPage = () => {
   return (
