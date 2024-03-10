@@ -64,23 +64,4 @@ const LandingPage = () => {
   );
 };
 
-const LandingPage = () => {
-  return (
-    <div className="landing-page">
-      ...
-      <div className="category-section">
-        ...
-        <div className="category-grid">
-          {categories.map((category, index) => (
-            <Link to="/main" className={`category-card ${category.class}`} key={index}>
-              <div className={category.icon}></div>
-              <h3>{category.name}</h3>
-            </Link>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
-
 export default LandingPage;
