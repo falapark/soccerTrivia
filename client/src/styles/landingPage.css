@@ -5,8 +5,11 @@
   background-repeat: no-repeat;
   background-attachment: fixed; /* Make background fixed instead of scrolling */
   min-height: 100vh; /* Minimum height to cover the full viewport height */
+  background-position: top center; /* Ensure the background starts from the top */
   color: #ffffff; /* Brighter text color for better contrast */
   font-family: 'Open Sans', sans-serif;
+  margin-top: 0; /* Remove any margin at the top that might cause black space */
+  padding-top: 0; /* Remove any padding at the top that might cause black space */
 }
 
 .intro-section h1 {
