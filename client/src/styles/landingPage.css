@@ -31,10 +31,17 @@
     border-radius: 10px;
   }
 
-  h2 {
-    font-size: 2.2em; /* Slightly larger font size */
-    font-weight: 700; /* Bold weight */
-    margin-bottom: 20px; /* Space below the header */
+  h2, .leaderboard h2 {
+    font-size: 2.5em; /* Increased font size for better visibility */
+    font-weight: 800; /* Increased weight for more emphasis */
+    color: #343a40; /* Darker color for better contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for depth */
+    margin-bottom: 30px; /* Increased space below the header */
+    padding: 10px 0; /* Padding for better spacing */
+    background-color: #f8f9fa; /* Light background to stand out */
+    border-radius: 5px; /* Rounded corners for aesthetic */
+    display: inline-block; /* To apply padding and border-radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
   }
   
   .category-card a {
