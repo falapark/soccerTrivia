@@ -7,6 +7,8 @@ import Main from './Main';
 import Quiz from './Quiz';
 import Result from './Result';
 import {CheckUserExist} from '../helper/helper';
+import LandingPage from './LandingPage';
+
 
 
 
@@ -15,7 +17,11 @@ import {CheckUserExist} from '../helper/helper';
 /**react routes */
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/', // Add this line
+    element: <LandingPage /> // And this line
+  },
+  {
+    path: '/main',
     element: <Main></Main>
   },
   {
@@ -26,7 +32,8 @@ const router = createBrowserRouter([
   {
     path: '/result',
     element: <CheckUserExist><Result></Result></CheckUserExist>
-  },
+  }
+
 ])
 
 
