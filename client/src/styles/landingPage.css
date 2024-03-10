@@ -58,10 +58,10 @@
 .leaderboard th, .leaderboard td {
   font-size: 16px; /* Increased font size for leaderboard entries */
   border-bottom: 1px solid #60a917;
-  padding: 20px; /* Further increased padding for better readability */
+  padding: 0.5rem; /* Increased padding around the text within the leaderboard */
   text-align: left;
-  color: #ffffff;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  color: #ffffff; /* Brighter text color for better readability */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7); /* Text shadow to lift the text from the background */
 }
 
 .category-section {
@@ -199,3 +199,20 @@ tr .leaderboard td:hover {
   cursor: pointer;
 }
 
+tr:nth-child(1) td {
+  background-color: #ffd700; /* Gold color for the top player */
+  position: relative; /* For positioning the icon */
+}
+
+tr:nth-child(1) td::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+tr td:hover {
+  background-color: rgba(255,255,255,0.1); /* Hover effect that suggests clickability */
+  cursor: pointer;
+}
