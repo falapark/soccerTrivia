@@ -54,6 +54,9 @@
 .category-card {
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
   color: #333333; /* Darker text color for better contrast */
+.category-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333333;
   transition: transform 0.3s ease;
   padding: 20px;
   border-radius: 10px;
@@ -68,6 +71,16 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  text-decoration: none;
+  overflow: hidden; /* Ensure the image does not overflow the card */
+}
+
+ .category-image {
+   width: 100%;
+   height: auto;
+   object-fit: cover; /* Ensure the image covers the card area */
+   border-radius: 5px; /* Optional: round corners to match the card */
+ }
   text-decoration: none; /* This line was duplicated, so one is removed */
   text-decoration: none; /* Remove underline from links */
 }

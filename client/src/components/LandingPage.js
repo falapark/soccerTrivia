@@ -4,13 +4,14 @@ import '../styles/landingPage.css';
 
 const categories = [
 
-  { name: 'Managers', icon: 'math-icon',  class: 'managers'},
-  { name: 'Challenge', icon: 'math-icon',  class: 'challenge' },
-  { name: 'Clubs', icon: 'math-icon',  class: 'clubs' },
-  { name: 'International Teams', icon: 'math-icon', class: 'international-teams' },
-  { name: 'Soccer Geography', icon: 'math-icon',  class: 'soccer-geography' },
-  { name: 'Guess The Player', icon: 'math-icon',  class: 'guess-the' },
-  { name: 'Players', icon: 'math-icon',  class: 'players' },
+const categories = [
+  { name: 'Managers', image: 'managers.jpg',  class: 'managers'},
+  { name: 'Challenge', image: 'challenge.jpg',  class: 'challenge' },
+  { name: 'Clubs', image: 'clubs.jpg',  class: 'clubs' },
+  { name: 'International Teams', image: 'international-teams.jpg', class: 'international-teams' },
+  { name: 'Soccer Geography', image: 'soccer-geography.jpg',  class: 'soccer-geography' },
+  { name: 'Guess The Player', image: 'guess-the-player.jpg',  class: 'guess-the' },
+  { name: 'Players', image: 'players.jpg',  class: 'players' },
   // ... other categories
 ];
 
@@ -54,7 +55,7 @@ const LandingPage = () => {
         <div className="category-grid">
           {categories.map((category, index) => (
             <Link to="/main" className={`category-card ${category.class}`} key={index}>
-              <div className={category.icon}></div>
+              <img src={`/images/${category.image}`} alt={category.name} className="category-image" />
               <h3>{category.name}</h3>
             </Link>
           ))}
