@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import '../styles/landingPage.css';
 
 const categories = [
@@ -12,14 +12,16 @@ const categories = [
   'Great Soccer Matches'
 ];
 
+// Function to handle category selection
 const LandingPage = () => {
+  const history = useHistory();
   return (
     <div className="landing-page">
       <h1 className="title">Think You Know Soccer? Take the Challenge!</h1>
       <div className="categories">
         <div className="category-grid">
           {categories.map((category, index) => (
-            <div key={index} className="category-card">
+            <div key={index} className="category-card" onClick={() => handleCategoryClick(category, history)}>
               <Link to={`/quiz/${category.toLowerCase().replace(/ /g, '-')}`} className="category-link">
                 <div className="category-content">
                   <div className="category-icon">{/* Icon related to the category */}</div>
