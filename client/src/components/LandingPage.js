@@ -8,7 +8,7 @@ const categories = [
   { name: 'Challenge', image: '/challenge.svg',  class: 'challenge' },
   { name: 'Clubs', image: '/clubs.svg',  class: 'clubs' },
   { name: 'International Teams', image: '/internationalTeams.svg', class: 'international-teams' },
-  { name: 'Soccer Geography', image: '/soccer-geography.svg',  class: 'soccer-geography' },
+  { name: 'Soccer Geography', image: '/soccerGeography.svg',  class: 'soccer-geography' },
   { name: 'Guess The Player', image: '/guessThe.svg',  class: 'guess-the' },
   { name: 'Players', image: '/players.svg',  class: 'players' },
   // ... other categories
