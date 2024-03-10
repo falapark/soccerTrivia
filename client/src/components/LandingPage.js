@@ -4,13 +4,13 @@ import '../styles/landingPage.css';
 
 
 const categories = [
-  { name: 'Managers', image: '../../public/managers.svg',  class: 'managers'},
-  { name: 'Challenge', image: '../../public/challenge.svg',  class: 'challenge' },
-  { name: 'Clubs', image: '../../public/clubs.svg',  class: 'clubs' },
-  { name: 'International Teams', image: '../../public/international-teams.svg', class: 'international-teams' },
-  { name: 'Soccer Geography', image: '../../public/soccer-geography.svg',  class: 'soccer-geography' },
-  { name: 'Guess The Player', image: '../../public/guess-the-player.svg',  class: 'guess-the' },
-  { name: 'Players', image: '../../public/players.svg',  class: 'players' },
+  { name: 'Managers', image: 'managers.svg',  class: 'managers'},
+  { name: 'Challenge', image: 'challenge.svg',  class: 'challenge' },
+  { name: 'Clubs', image: 'clubs.svg',  class: 'clubs' },
+  { name: 'International Teams', image: 'international-teams.svg', class: 'international-teams' },
+  { name: 'Soccer Geography', image: 'soccer-geography.svg',  class: 'soccer-geography' },
+  { name: 'Guess The Player', image: 'guess-the-player.svg',  class: 'guess-the' },
+  { name: 'Players', image: 'players.svg',  class: 'players' },
   // ... other categories
 ];
 
