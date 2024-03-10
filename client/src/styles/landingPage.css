@@ -34,8 +34,10 @@
 }
 
 .leaderboard th, .leaderboard td {
+  font-size: 16px; /* Increased font size for leaderboard entries */
   border-bottom: 1px solid #60a917;
   padding: 10px;
+  padding: 15px; /* Increased padding between leaderboard entries */
   text-align: left;
 }
 
@@ -57,6 +59,12 @@
 .category-card {
   transition: transform 0.3s ease;
   padding: 20px;
+.category-card {
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent dark overlay */
+  color: #ffffff; /* White text for readability */
+  font-size: 18px; /* Increased font size for category names */
+  transition: transform 0.3s ease, scale 0.3s ease; /* Added scale animation */
+  padding: 30px; /* Increased padding around text */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -86,6 +94,7 @@
 
 .category-card:hover {
   transform: translateY(-5px);
+  transform: translateY(-5px) scale(1.05); /* Subtle scale transform on hover */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -113,4 +122,18 @@
     flex-direction: column;
     align-items: center;
   }
+  .leaderboard {
+    width: 100%;
+    max-width: 600px; /* Leaderboard scales down on smaller screens */
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+tr:nth-child(even) .leaderboard td {
+  background-color: #f2f2f2; /* Zebra striping for leaderboard */
+}
+
+tr .leaderboard td {
+  box-sizing: border-box; /* Border-box for each row */
 }
