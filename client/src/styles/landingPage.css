@@ -63,8 +63,8 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 200px; /* Fixed width for all category cards */
-  height: 150px; /* Fixed height for all category cards */
+  width: 250px; /* Increased width for all category cards */
+  height: 200px; /* Increased height for all category cards */
   width: 200px; /* Fixed width for all category cards */
   height: 150px; /* Fixed height for all category cards */
   display: flex;
