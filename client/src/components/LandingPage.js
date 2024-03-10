@@ -4,13 +4,13 @@ import '../styles/landingPage.css';
 
 
 const categories = [
-  { name: 'Managers', image: '/public/managers.svg',  class: 'managers'},
-  { name: 'Challenge', image: '/public/challenge.svg',  class: 'challenge' },
-  { name: 'Clubs', image: '/public/clubs.svg',  class: 'clubs' },
-  { name: 'International Teams', image: '/public/internationalTeams.svg', class: 'international-teams' },
-  { name: 'Soccer Geography', image: '/public/soccer-geography.svg',  class: 'soccer-geography' },
-  { name: 'Guess The Player', image: '/public/guess-the-player.svg',  class: 'guess-the' },
-  { name: 'Players', image: '/public/players.svg',  class: 'players' },
+  { name: 'Managers', image: '/managers.svg',  class: 'managers'},
+  { name: 'Challenge', image: '/challenge.svg',  class: 'challenge' },
+  { name: 'Clubs', image: '/clubs.svg',  class: 'clubs' },
+  { name: 'International Teams', image: '/internationalTeams.svg', class: 'international-teams' },
+  { name: 'Soccer Geography', image: '/soccer-geography.svg',  class: 'soccer-geography' },
+  { name: 'Guess The Player', image: '/guessThe.svg',  class: 'guess-the' },
+  { name: 'Players', image: '/players.svg',  class: 'players' },
   // ... other categories
 ];
 
@@ -54,7 +54,7 @@ const LandingPage = () => {
         <div className="category-grid">
           {categories.map((category, index) => (
             <Link to="/main" className={`category-card ${category.class}`} key={index}>
-              <img src={`/public/${category.image}`} alt={category.name} className="category-image" />
+              <img src={`${category.image}`} alt={category.name} className="category-image" />
               <h3>{category.name}</h3>
             </Link>
           ))}
