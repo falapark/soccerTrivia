@@ -21,10 +21,10 @@
 }
 
 .leaderboard-section {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  background: linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(0,0,0,0));
   color: #333333; /* Darker text color for better contrast */
   transition: transform 0.3s ease;
-  padding: 20px;
+  padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial subtle shadow */
   border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle white border */
   border-radius: 10px;
@@ -50,7 +50,7 @@
 
 /* And so on for h5 and h6 if they are used in the landing page */
 .leaderboard {
-  border-collapse: collapse;
+  border-spacing: 0.5rem;
   width: 100%;
   margin-top: 10px;
 }
@@ -78,7 +78,7 @@
 
 .category-card {
   transition: transform 0.3s ease;
-  padding: 20px;
+  padding: 1rem;
   position: relative; /* Needed to position the gradient overlay */
 .category-card {
   padding: 10px; /* Adjust padding to ensure uniformity */
@@ -163,6 +163,7 @@
     flex-direction: column;
     align-items: center;
   }
+  /* Additional responsive design adjustments can be placed here */
 }
 tr:nth-child(even) .leaderboard td {
   background-color: #f2f2f2; /* Zebra striping for leaderboard */
