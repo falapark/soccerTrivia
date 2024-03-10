@@ -20,7 +20,7 @@
   text-align: center;
   color: #E6E6E6;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-  margin: 20px 0; /* This adds space above and below the title */
+  margin: 0; /* Remove margin to eliminate black space at the top */
 }
 
 
