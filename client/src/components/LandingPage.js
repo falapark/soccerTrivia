@@ -50,9 +50,19 @@ const LandingPage = () => {
       <div className="category-section">
         <h2>Quiz Categories</h2>
         <p>Click on a category below to start the quiz!</p>
+import { useHistory } from 'react-router-dom';
+
+const LandingPage = () => {
+  const history = useHistory();
+
+  return (
+    <div className="landing-page">
+      ...
+      <div className="category-section">
+        ...
         <div className="category-grid">
           {categories.map((category, index) => (
-            <div className={`category-card ${category.class}`} key={index}>
+            <div className={`category-card ${category.class}`} key={index} onClick={() => history.push('/main')}>
               <div className={category.icon}></div>
               <h3>{category.name}</h3>
             </div>
