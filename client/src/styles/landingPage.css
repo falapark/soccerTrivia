@@ -4,11 +4,16 @@
   }
   
   .title {
-    margin-bottom: 40px;
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #343a40; /* Dark gray color */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+    font-size: 3em; /* Increased font size */
+    font-weight: 800; /* Bolder weight */
+    color: #ffffff; /* Light color for contrast */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+    background-color: #007bff; /* Contrasting background */
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
   }
   
   .category-grid {
@@ -24,6 +29,12 @@
     background-color: #007BFF;
     color: white;
     border-radius: 10px;
+  }
+
+  h2 {
+    font-size: 2.2em; /* Slightly larger font size */
+    font-weight: 700; /* Bold weight */
+    margin-bottom: 20px; /* Space below the header */
   }
   
   .category-card a {
