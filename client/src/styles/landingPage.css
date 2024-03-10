@@ -58,8 +58,7 @@
 .leaderboard th, .leaderboard td {
   font-size: 16px; /* Increased font size for leaderboard entries */
   border-bottom: 1px solid #60a917;
-  padding: 10px;
-  padding: 15px; /* Increased padding between leaderboard entries */
+  padding: 20px; /* Further increased padding for better readability */
   text-align: left;
 }
 
