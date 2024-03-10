@@ -5,13 +5,13 @@ import '../styles/landingPage.css';
 const categories = [
 
 const categories = [
-  { name: 'Managers', image: 'managers.jpg',  class: 'managers'},
-  { name: 'Challenge', image: 'challenge.jpg',  class: 'challenge' },
-  { name: 'Clubs', image: 'clubs.jpg',  class: 'clubs' },
-  { name: 'International Teams', image: 'international-teams.jpg', class: 'international-teams' },
-  { name: 'Soccer Geography', image: 'soccer-geography.jpg',  class: 'soccer-geography' },
-  { name: 'Guess The Player', image: 'guess-the-player.jpg',  class: 'guess-the' },
-  { name: 'Players', image: 'players.jpg',  class: 'players' },
+  { name: 'Managers', image: 'managers.svg',  class: 'managers'},
+  { name: 'Challenge', image: 'challenge.svg',  class: 'challenge' },
+  { name: 'Clubs', image: 'clubs.svg',  class: 'clubs' },
+  { name: 'International Teams', image: 'international-teams.svg', class: 'international-teams' },
+  { name: 'Soccer Geography', image: 'soccer-geography.svg',  class: 'soccer-geography' },
+  { name: 'Guess The Player', image: 'guess-the-player.svg',  class: 'guess-the' },
+  { name: 'Players', image: 'players.svg',  class: 'players' },
   // ... other categories
 ];
 
