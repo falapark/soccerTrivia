@@ -1,60 +1,59 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
-import '../styles/landingPageEnhanced.css'; // Assume the CSS file name has changed to reflect the new styles
+import './LandingPage.css'; // Assuming the CSS file is named LandingPage.css
 
 const categories = [
-  'History of Soccer',
-  'World Cup',
-  'Famous Players',
-  'Soccer Rules',
-  'Soccer Leagues',
-  'Soccer Clubs',
-  'Great Soccer Matches'
+  { name: 'Science', icon: 'science-icon' },
+  { name: 'Math', icon: 'math-icon' },
+  // ... other categories
 ];
 
-// Function to handle category selection
+const leaderboardData = [
+  { name: 'Alice', score: 120 },
+  { name: 'Bob', score: 110 },
+  // ... other leaderboard entries
+];
+
 const LandingPage = () => {
-  const history = useHistory();
   return (
     <div className="landing-page">
-      <h1 className="title" style={{ color: '#2ecc71' }}>Think You Know Soccer? Take the Challenge!</h1>
-      <div className="categories">
+      <div className="intro-section">
+        <h1>Welcome to the Quiz Challenge!</h1>
+        <p>Test your knowledge and see how you rank against other quiz-takers.</p>
+      </div>
+      <div className="leaderboard-section">
+        <h2>Leaderboard</h2>
+        <table className="leaderboard">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            {leaderboardData.map((entry, index) => (
+              <tr key={index}>
+                <td>{index + 1}</td>
+                <td>{entry.name}</td>
+                <td>{entry.score}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <div className="category-section">
+        <h2>Choose a Category</h2>
         <div className="category-grid">
           {categories.map((category, index) => (
-            <div key={index} className="category-card" onClick={() => handleCategoryClick(category, history)}>
-              <Link to={`/quiz/${category.toLowerCase().replace(/ /g, '-')}`} className="category-link">
-                <div className="category-content">
-                  <div className="category-icon">{/* Icons related to the category will be added here */}</div>
-                  <div className="category-title" style={{ color: '#2ecc71' }}>{category}</div>
-                </div>
-              </Link>
+            <div className="category-card" key={index}>
+              <div className={category.icon}></div>
+              <h3>{category.name}</h3>
             </div>
           ))}
         </div>
       </div>
-      <div className="intro-text">
-        <p>Join the ranks of soccer experts! Test your knowledge and climb up the leaderboard!</p>
-      </div>
-      <div className="leaderboard">
-        <h2 style={{ color: '#2ecc71' }}>Leaderboard</h2>
-        {/* Leaderboard content goes here */}
-        <div className="leaderboard-content">
-          <table className="leaderboard-table">
-            <thead>
-              <tr>
-                <th>Rank</th>
-                <th>Player</th>
-                <th>Score</th>
-              </tr>
-            </thead>
-            <tbody>
-              {/* Leaderboard rows will be dynamically inserted here */}
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div className="cta-button">
-        <button style={{ backgroundColor: '#f1c40f' }}>Start Quiz</button>
+      <div className="cta-section">
+        <button className="cta-button">Start Quiz</button>
       </div>
     </div>
   );
