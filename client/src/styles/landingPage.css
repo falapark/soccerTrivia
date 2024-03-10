@@ -1,5 +1,8 @@
 .landing-page {
   background-image: url('../../public/background.svg'); /* Corrected relative path */
+  background-image: url('../../public/background.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #ecf0f1;
   font-family: 'Open Sans', sans-serif;
 }
