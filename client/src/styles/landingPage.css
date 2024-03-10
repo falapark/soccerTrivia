@@ -21,15 +21,13 @@
 }
 
 .leaderboard-section {
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for readability */
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), rgba(255, 255, 255, 0.8);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), rgba(255, 255, 255, 0.8);
   color: #333333; /* Darker text color for better contrast */
   transition: transform 0.3s ease;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Initial subtle shadow */
   border-radius: 10px;
   margin: 20px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .leaderboard-section h2 {
