@@ -9,7 +9,6 @@
   min-height: 100vh; /* Minimum height to cover the full viewport height */
   background-position: top center; /* Ensure the background starts from the top */
   color: #ffffff; /* Updated color for the title to pop against a dark background */
-  font-family: 'Open Sans', sans-serif; /* Modern, web-safe font for better readability */
   font-family: 'Roboto', sans-serif; /* Modern, web-safe font for better readability */
   margin-top: 0; /* Remove any margin at the top that might cause black space */
   padding-top: 0; /* Remove any padding at the top that might cause black space */
@@ -68,10 +67,9 @@
 .leaderboard th, .leaderboard td {
   font-weight: bold; /* Emphasize the names on the leaderboard */
   padding: 0.75rem; /* Adjusted spacing for better readability */
-  font-size: 1.1em; /* Increased font size for player scores */
   border: 1px solid #fff; /* Solid border for visual separation */
   box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* Optional shadow for depth */
-  font-size: 16px; /* Increased font size for leaderboard entries */
+  font-size: 1.1em; /* Increased font size for leaderboard entries */
   border-bottom: 1px solid #60a917;
   padding: 0.5rem; /* Increased padding around the text within the leaderboard */
   text-align: left;
@@ -98,21 +96,14 @@
   padding: 1rem;
   position: relative; /* Needed to position the gradient overlay */
 .category-card {
-  padding: 10px; /* Adjust padding to ensure uniformity */
   background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent dark overlay */
   position: relative; /* Needed to position the gradient overlay */
   color: #ffffff; /* White text for readability */
-  font-size: 18px; /* Standardized font size for better readability */
+  font-size: 1.1em; /* Standardized font size for better readability */
   transition: transform 0.3s ease, scale 0.3s ease; /* Added scale animation */
   border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced shadow for a 'lifted' effect */
   text-align: center;
-  width: 200px; /* Fixed width for all category cards */
-  height: 150px; /* Fixed height for all category cards */
-  width: 200px; /* Fixed width for all category cards */
-  height: 150px; /* Fixed height for all category cards */
-  width: 200px; /* Fixed width for all category cards */
-  height: 150px; /* Fixed height for all category cards */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,8 +119,6 @@
    object-fit: cover; /* Ensure the image covers the card area */
    border-radius: 5px; /* Optional: round corners to match the card */
  }
-  text-decoration: none; /* Remove underline from links */
-  text-decoration: none; /* Remove underline from links */
 }
 
  .category-card::before {
@@ -143,7 +132,6 @@
  }
 
 .category-card:hover {
-  transform: translateY(-5px) scale(1.05); /* Subtle scale transform on hover */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Subtle drop shadow on hover */
   transform: translateY(-5px) scale(1.05); /* Subtle scale transform on hover */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -207,7 +195,6 @@ p{
   text-align: center;
   margin-top: 0;
   padding-top: 0;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   letter-spacing: 0.05em; /* Increased letter spacing for a more modern and airy feel */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for tagline */
 }
@@ -218,7 +205,6 @@ tr:nth-child(1) .leaderboard td {
   border: 1px solid #fff; /* Solid border for visual separation */
   box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* Optional shadow for depth */
   background-color: #ffd700; /* gold color for the top player */
-  position: relative; /* for positioning the icon */
 }
 
 tr:nth-child(1) .leaderboard td::before {
@@ -235,8 +221,7 @@ tr .leaderboard td:hover {
 }
 
 tr:nth-child(1) td {
-  background-color: #42810e; /* Gold color for the top player */
-  position: relative; /* For positioning the icon */
+  background-color: #ffd700; /* Gold color for the top player */
 }
 
 tr:nth-child(1) td::before {
@@ -248,7 +233,7 @@ tr:nth-child(1) td::before {
 }
 
 tr td:hover {
-  background-color: rgba(255,255,255,0.1); /* Hover effect that suggests clickability */
+  background-color: rgba(255,255,255,0.1);
   cursor: pointer;
 }
 tr:nth-child(odd) .leaderboard td {
