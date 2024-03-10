@@ -1,21 +1,13 @@
 import React, { useRef } from 'react';
 import { useDispatch } from 'react-redux';
-import { useHistory } from 'react-router-dom';
 import '../styles/Main.css'
 import { setUserId } from '../redux/result_reducer';
 
+import { Link } from 'react-router-dom';
 
 export default function Main() {
     const inputRef = useRef(null);
     const dispatch = useDispatch()
-    const history = useHistory();
-
-    function startQuiz() {
-        if(inputRef.current?.value) {
-            dispatch(setUserId(inputRef.current?.value))
-            history.push('/quiz'); // Navigate to the quiz route
-        }
-    }
 
 
     return(
@@ -35,9 +27,14 @@ export default function Main() {
         </form>
 
         <div className='start'>
-            <button className='btn' onClick={startQuiz}>Start Quiz</button>
+            <Link to="/quiz" className='btn' onClick={() => {
+                if(inputRef.current?.value) {
+                    dispatch(setUserId(inputRef.current?.value));
+                }
+            }}>Start Quiz</Link>
         </div>
        
+
 
     </div>
     );
