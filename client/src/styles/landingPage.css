@@ -6,7 +6,7 @@
   background-attachment: fixed; /* Make background fixed instead of scrolling */
   min-height: 100vh; /* Minimum height to cover the full viewport height */
   background-position: top center; /* Ensure the background starts from the top */
-  color: #ffffff; /* White color for the title to pop against a dark background */
+  color: #ffffff; /* Updated color for the title to pop against a dark background */
   font-family: 'Roboto', sans-serif; /* Modern, web-safe font for better readability */
   margin-top: 0; /* Remove any margin at the top that might cause black space */
   padding-top: 0; /* Remove any padding at the top that might cause black space */
@@ -66,7 +66,7 @@
   border-bottom: 1px solid #60a917;
   padding: 0.5rem; /* Increased padding around the text within the leaderboard */
   text-align: left;
-  color: #ffffff; /* Brighter text color for better readability */
+  color: rgba(255, 255, 255, 0.7); /* Light grey with lower opacity for the tagline */
   text-shadow: 1px 1px 3px rgba(0,0,0,0.7); /* Text shadow to lift the text from the background */
 }
 
