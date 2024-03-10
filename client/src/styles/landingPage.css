@@ -81,6 +81,7 @@
 .category-card {
   transition: transform 0.3s ease;
   padding: 20px;
+  position: relative; /* Needed to position the gradient overlay */
 .category-card {
   padding: 10px; /* Adjust padding to ensure uniformity */
   background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent dark overlay */
