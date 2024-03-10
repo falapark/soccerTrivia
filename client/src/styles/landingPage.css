@@ -1,5 +1,5 @@
 .landing-page {
-  background-image: url('../assets/images/background.jpg'); /* Background image */
+  background-image: url('/client/public/background.jpg'); /* Background image */
   color: #ecf0f1;
   font-family: 'Open Sans', sans-serif;
 }
