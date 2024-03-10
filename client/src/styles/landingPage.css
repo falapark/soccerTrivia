@@ -21,7 +21,7 @@
 }
 
 .leaderboard-section {
-  background: linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(0,0,0,0));
+  background: linear-gradient(to bottom, rgba(0,0,0,0.85), transparent);
   color: #333333; /* Darker text color for better contrast */
   transition: transform 0.3s ease;
   padding: 1rem;
@@ -60,12 +60,14 @@
   border-bottom: 1px solid #60a917;
   padding: 20px; /* Further increased padding for better readability */
   text-align: left;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
 .category-section {
   text-align: center;
   gap: 1rem;
-  padding: 20px;
+  padding: 0.5rem;
 }
 
 .category-grid {
@@ -179,3 +181,21 @@ p{
   margin-top: 0;
   padding-top: 0;
 }
+tr:nth-child(1) .leaderboard td {
+  background-color: #ffd700; /* gold color for the top player */
+  position: relative; /* for positioning the icon */
+}
+
+tr:nth-child(1) .leaderboard td::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+tr .leaderboard td:hover {
+  background-color: rgba(255,255,255,0.1);
+  cursor: pointer;
+}
+
