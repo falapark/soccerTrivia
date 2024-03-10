@@ -1,13 +1,109 @@
 .landing-page {
     text-align: left;
     padding: 20px;
-    background-color: #2c3e50; /* Midnight Blue background */
+    background-color: #2c3e50; /* Updated to Midnight Blue background */
   }
+
+/* Additional styles based on the design brief */
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard-table th {
+    background-color: #2ecc71; /* Emerald Green for leaderboard headings */
+    color: #ecf0f1; /* Cloud White for text */
+}
+
+.cta-button button {
+    background-color: #f1c40f; /* Sunflower Yellow for CTA buttons */
+    color: #2c3e50; /* Midnight Blue for text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button button:hover {
+    background-color: #d4ac0d; /* Darker shade of yellow for hover effect */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .category-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+
+    .leaderboard h2 {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+}
   /* Added hover effect for category cards */
   .category-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
+
+/* Additional styles based on the design brief */
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard-table th {
+    background-color: #2ecc71; /* Emerald Green for leaderboard headings */
+    color: #ecf0f1; /* Cloud White for text */
+}
+
+.cta-button button {
+    background-color: #f1c40f; /* Sunflower Yellow for CTA buttons */
+    color: #2c3e50; /* Midnight Blue for text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button button:hover {
+    background-color: #d4ac0d; /* Darker shade of yellow for hover effect */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .category-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+
+    .leaderboard h2 {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+}
   
   .title {
     margin-bottom: 50px;
@@ -15,17 +111,113 @@
     font-weight: 800; /* Bolder weight */
     color: #ffffff; /* Light color for contrast */
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
-    background-color: #007bff; /* Contrasting background */
+    background-color: #2c3e50; /* Updated to Midnight Blue background */
     display: inline-block;
     padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
   }
+
+/* Additional styles based on the design brief */
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard-table th {
+    background-color: #2ecc71; /* Emerald Green for leaderboard headings */
+    color: #ecf0f1; /* Cloud White for text */
+}
+
+.cta-button button {
+    background-color: #f1c40f; /* Sunflower Yellow for CTA buttons */
+    color: #2c3e50; /* Midnight Blue for text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button button:hover {
+    background-color: #d4ac0d; /* Darker shade of yellow for hover effect */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .category-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+
+    .leaderboard h2 {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+}
   /* Added hover effect for category cards */
   .category-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
+
+/* Additional styles based on the design brief */
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard-table th {
+    background-color: #2ecc71; /* Emerald Green for leaderboard headings */
+    color: #ecf0f1; /* Cloud White for text */
+}
+
+.cta-button button {
+    background-color: #f1c40f; /* Sunflower Yellow for CTA buttons */
+    color: #2c3e50; /* Midnight Blue for text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button button:hover {
+    background-color: #d4ac0d; /* Darker shade of yellow for hover effect */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .category-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+
+    .leaderboard h2 {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+}
   
   .category-grid {
     display: flex;
@@ -33,20 +225,164 @@
     justify-content: center;
     gap: 30px; /* Increased gap for better spacing */
   }
+
+/* Additional styles based on the design brief */
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard-table th {
+    background-color: #2ecc71; /* Emerald Green for leaderboard headings */
+    color: #ecf0f1; /* Cloud White for text */
+}
+
+.cta-button button {
+    background-color: #f1c40f; /* Sunflower Yellow for CTA buttons */
+    color: #2c3e50; /* Midnight Blue for text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button button:hover {
+    background-color: #d4ac0d; /* Darker shade of yellow for hover effect */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .category-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+
+    .leaderboard h2 {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+}
   /* Added hover effect for category cards */
   .category-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
+
+/* Additional styles based on the design brief */
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard-table th {
+    background-color: #2ecc71; /* Emerald Green for leaderboard headings */
+    color: #ecf0f1; /* Cloud White for text */
+}
+
+.cta-button button {
+    background-color: #f1c40f; /* Sunflower Yellow for CTA buttons */
+    color: #2c3e50; /* Midnight Blue for text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button button:hover {
+    background-color: #d4ac0d; /* Darker shade of yellow for hover effect */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .category-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+
+    .leaderboard h2 {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+}
   
   .category-card {
     width: 100%;
     padding: 20px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #ecf0f1; /* Updated to Cloud White for card backgrounds */
+    color: #2c3e50; /* Updated to Midnight Blue for text */
     border-radius: 15px; /* Rounded corners for cards */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
   }
+
+/* Additional styles based on the design brief */
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard-table th {
+    background-color: #2ecc71; /* Emerald Green for leaderboard headings */
+    color: #ecf0f1; /* Cloud White for text */
+}
+
+.cta-button button {
+    background-color: #f1c40f; /* Sunflower Yellow for CTA buttons */
+    color: #2c3e50; /* Midnight Blue for text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button button:hover {
+    background-color: #d4ac0d; /* Darker shade of yellow for hover effect */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .category-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+
+    .leaderboard h2 {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+}
   h2, .leaderboard h2 {
     font-size: 2.5em; /* Increased font size for better visibility */
     font-weight: 800; /* Increased weight for more emphasis */
@@ -59,28 +395,316 @@
     display: inline-block; /* To apply padding and border-radius */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
   }
+
+/* Additional styles based on the design brief */
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard-table th {
+    background-color: #2ecc71; /* Emerald Green for leaderboard headings */
+    color: #ecf0f1; /* Cloud White for text */
+}
+
+.cta-button button {
+    background-color: #f1c40f; /* Sunflower Yellow for CTA buttons */
+    color: #2c3e50; /* Midnight Blue for text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button button:hover {
+    background-color: #d4ac0d; /* Darker shade of yellow for hover effect */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .category-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+
+    .leaderboard h2 {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+}
   /* Added hover effect for category cards */
   .category-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
+
+/* Additional styles based on the design brief */
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard-table th {
+    background-color: #2ecc71; /* Emerald Green for leaderboard headings */
+    color: #ecf0f1; /* Cloud White for text */
+}
+
+.cta-button button {
+    background-color: #f1c40f; /* Sunflower Yellow for CTA buttons */
+    color: #2c3e50; /* Midnight Blue for text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button button:hover {
+    background-color: #d4ac0d; /* Darker shade of yellow for hover effect */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .category-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+
+    .leaderboard h2 {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+}
   
   .category-card a {
-    color: white;
+    color: #2c3e50; /* Updated to Midnight Blue for text */
     text-decoration: none;
   }
+
+/* Additional styles based on the design brief */
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard-table th {
+    background-color: #2ecc71; /* Emerald Green for leaderboard headings */
+    color: #ecf0f1; /* Cloud White for text */
+}
+
+.cta-button button {
+    background-color: #f1c40f; /* Sunflower Yellow for CTA buttons */
+    color: #2c3e50; /* Midnight Blue for text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button button:hover {
+    background-color: #d4ac0d; /* Darker shade of yellow for hover effect */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .category-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+
+    .leaderboard h2 {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+}
   /* Added hover effect for category cards */
   .category-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
+
+/* Additional styles based on the design brief */
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard-table th {
+    background-color: #2ecc71; /* Emerald Green for leaderboard headings */
+    color: #ecf0f1; /* Cloud White for text */
+}
+
+.cta-button button {
+    background-color: #f1c40f; /* Sunflower Yellow for CTA buttons */
+    color: #2c3e50; /* Midnight Blue for text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button button:hover {
+    background-color: #d4ac0d; /* Darker shade of yellow for hover effect */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .category-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+
+    .leaderboard h2 {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+}
   
   .leaderboard {
     margin-top: 30px; /* Adjusted margin for layout */
   }
+
+/* Additional styles based on the design brief */
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard-table th {
+    background-color: #2ecc71; /* Emerald Green for leaderboard headings */
+    color: #ecf0f1; /* Cloud White for text */
+}
+
+.cta-button button {
+    background-color: #f1c40f; /* Sunflower Yellow for CTA buttons */
+    color: #2c3e50; /* Midnight Blue for text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button button:hover {
+    background-color: #d4ac0d; /* Darker shade of yellow for hover effect */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .category-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+
+    .leaderboard h2 {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+}
   /* Added hover effect for category cards */
   .category-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
+
+/* Additional styles based on the design brief */
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.leaderboard-table th {
+    background-color: #2ecc71; /* Emerald Green for leaderboard headings */
+    color: #ecf0f1; /* Cloud White for text */
+}
+
+.cta-button button {
+    background-color: #f1c40f; /* Sunflower Yellow for CTA buttons */
+    color: #2c3e50; /* Midnight Blue for text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button button:hover {
+    background-color: #d4ac0d; /* Darker shade of yellow for hover effect */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .category-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+
+    .leaderboard h2 {
+        font-size: 2em; /* Smaller font size for mobile devices */
+    }
+}
   
