@@ -1,59 +1,79 @@
 .landing-page {
-  background-color: #2c3e50;
+  background-color: #60a917; /* Soccer field green */
   color: #ecf0f1;
   font-family: 'Open Sans', sans-serif;
 }
 
 .intro-section h1 {
   font-family: 'Roboto Slab', serif;
+  text-align: center;
 }
 
 .leaderboard-section {
-  background-color: #ecf0f1;
-  color: #2c3e50;
+  background-color: #fff;
+  color: #60a917;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .leaderboard-section h2 {
-  color: #2ecc71;
+  color: #60a917;
+  text-align: center;
 }
 
 .leaderboard {
   border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
 }
 
 .leaderboard th, .leaderboard td {
-  border-bottom: 1px solid #ecf0f1;
+  border-bottom: 1px solid #60a917;
+  padding: 10px;
+  text-align: left;
 }
 
 .category-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
+  padding: 20px;
 }
 
 .category-card {
-  background-color: #ecf0f1;
-  color: #2c3e50;
+  background-color: #fff;
+  color: #60a917;
   transition: transform 0.3s ease;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .category-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .cta-button {
-  background-color: #f1c40f;
-  color: #2c3e50;
+  background-color: #fff;
+  color: #60a917;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .cta-button:hover {
-  background-color: #f39c12;
+  background-color: #8cc63f;
 }
 
 @media (max-width: 768px) {

@@ -17,8 +17,8 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <div className="intro-section">
-        <h1>Welcome to the Quiz Challenge!</h1>
-        <p>Test your knowledge and see how you rank against other quiz-takers.</p>
+        <h1>Soccer Quiz Challenge</h1>
+        <p>Think you know soccer? Take on the challenge and climb the leaderboard!</p>
       </div>
       <div className="leaderboard-section">
         <h2>Leaderboard</h2>
@@ -42,7 +42,7 @@ const LandingPage = () => {
         </table>
       </div>
       <div className="category-section">
-        <h2>Choose a Category</h2>
+        <h2>Soccer Quiz Categories</h2>
         <div className="category-grid">
           {categories.map((category, index) => (
             <div className="category-card" key={index}>
@@ -53,7 +53,7 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="cta-section">
-        <button className="cta-button">Start Quiz</button>
+        <button className="cta-button">Kick Off!</button>
       </div>
     </div>
   );
