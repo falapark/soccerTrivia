@@ -49,7 +49,7 @@ const LandingPage = () => {
       <div className="category-section">
         <h2>Quiz Categories</h2>
         <p>Click on a category below to start the quiz!</p>
-        <div className="category-container">
+        <div className="category-grid">
           {categories.map((category, index) => (
             <div className="category-card" key={index}>
               <div className={category.icon}></div>

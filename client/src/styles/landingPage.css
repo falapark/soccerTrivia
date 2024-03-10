@@ -36,12 +36,16 @@
 }
 
 .category-section {
-  display: grid;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  text-align: center;
   gap: 1rem;
   padding: 20px;
+}
+
+.category-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .category-card {
@@ -79,7 +83,8 @@
 }
 
 @media (max-width: 768px) {
-  .category-section {
-    grid-template-columns: 1fr;
+  .category-grid {
+    flex-direction: column;
+    align-items: center;
   }
 }
