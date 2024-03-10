@@ -64,6 +64,7 @@
   align-items: center;
   cursor: pointer;
   text-decoration: none; /* Remove underline from links */
+  text-decoration: none; /* Remove underline from links */
 }
 
 .category-card:hover {
