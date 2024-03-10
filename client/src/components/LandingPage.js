@@ -1,5 +1,5 @@
 import React from 'react';
-import './LandingPage.css'; // Assuming the CSS file is named LandingPage.css
+import '../styles/landingPage.css'; // Assuming the CSS file is named LandingPage.css
 
 const categories = [
   { name: 'Science', icon: 'science-icon' },
