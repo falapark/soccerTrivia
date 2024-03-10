@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/landingPage.css';
 
 const categories = [
@@ -50,6 +51,18 @@ const LandingPage = () => {
       <div className="category-section">
         <h2>Quiz Categories</h2>
         <p>Click on a category below to start the quiz!</p>
+        <div className="category-grid">
+          {categories.map((category, index) => (
+            <Link to="/main" className={`category-card ${category.class}`} key={index}>
+              <div className={category.icon}></div>
+              <h3>{category.name}</h3>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
 import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
