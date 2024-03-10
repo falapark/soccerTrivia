@@ -67,16 +67,16 @@
   transition: transform 0.3s ease;
   padding: 20px;
 .category-card {
-  padding: 15px; /* Adjust padding to ensure uniformity */
+  padding: 10px; /* Adjust padding to ensure uniformity */
   background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent dark overlay */
   color: #ffffff; /* White text for readability */
-  font-size: 18px; /* Increased font size for category names */
+  font-size: 16px; /* Adjusted font size for consistency */
   transition: transform 0.3s ease, scale 0.3s ease; /* Added scale animation */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 180px; /* Adjusted width for consistency */
-  height: 130px; /* Adjusted height for consistency */
+  width: 200px; /* Fixed width for all category cards */
+  height: 150px; /* Fixed height for all category cards */
   width: 200px; /* Fixed width for all category cards */
   height: 150px; /* Fixed height for all category cards */
   width: 200px; /* Fixed width for all category cards */
