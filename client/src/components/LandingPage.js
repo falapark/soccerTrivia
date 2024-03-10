@@ -4,7 +4,7 @@ import '../styles/landingPage.css';
 
 
 const categories = [
-  { name: 'Managers', image: '/images/managers.svg',  class: 'managers'},
+  { name: 'Managers', image: '../../public/managers.svg',  class: 'managers'},
   { name: 'Challenge', image: '/images/challenge.svg',  class: 'challenge' },
   { name: 'Clubs', image: '/images/clubs.svg',  class: 'clubs' },
   { name: 'International Teams', image: '/images/international-teams.svg', class: 'international-teams' },
