@@ -11,8 +11,6 @@ const app = express();
 
 // auth router attaches /login, /logout, and /callback routes to the baseURL
 
-/**app middlewares */
-
 app.use (morgan('tiny'));
 app.use (cors());
 app.use(express.json());
@@ -40,7 +38,6 @@ connectDB().then(()=>{
             console.log(`Server connected to http://localhost:${port}`)
         });
     } catch (error) {
-        console.log("cannot connect to the server")
         console.log("cannot coonect to the server")
     } 
 }).catch((error)=>{
