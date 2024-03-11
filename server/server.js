@@ -11,7 +11,7 @@ const app = express();
 
 // auth router attaches /login, /logout, and /callback routes to the baseURL
 
-app.use (morgan('tiny'));
+app.use(morgan('tiny'));
 app.use (cors());
 app.use(express.json());
 
@@ -26,8 +26,6 @@ app.use("/api" , router); /**APIS */
 
 
 /**routes */
-
-// Original routes before Auth0 integration
 
 
 /**start server only when we have valid connection */
