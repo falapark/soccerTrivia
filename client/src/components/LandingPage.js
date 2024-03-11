@@ -28,8 +28,8 @@ const LandingPage = () => {  const navigate = useNavigate();
     window.location.href = `https://${process.env.REACT_APP_AUTH0_DOMAIN}/authorize?response_type=code&client_id=${process.env.REACT_APP_AUTH0_CLIENT_ID}&redirect_uri=${process.env.REACT_APP_SERVER_URL}/callback`;
   };
 
-  // ... rest of the component
-};
+  // ... rest of the component (this comment should be removed or moved inside the function)
+
   return (
     <div className="landing-page">
       <div className="intro-section">
@@ -74,3 +74,4 @@ const LandingPage = () => {  const navigate = useNavigate();
 };
 
 export default LandingPage;
+}
