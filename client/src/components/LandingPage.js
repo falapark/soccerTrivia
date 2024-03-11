@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import '../styles/landingPage.css';
 
@@ -20,7 +21,13 @@ const leaderboardData = [
   // ... other leaderboard entries
 ];
 
-const LandingPage = () => {
+const LandingPage = () => {  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    // Redirect to the server's login route
+    window.location.href = `${process.env.REACT_APP_SERVER_URL}/login`;
+  };
+
   return (
     <div className="landing-page">
       <div className="intro-section">
@@ -59,6 +66,7 @@ const LandingPage = () => {
           ))}
         </div>
       </div>
+      <button onClick={handleLogin}>Log In</button>
     </div>
   );
 };
