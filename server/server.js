@@ -17,9 +17,9 @@ const authConfig = {
   authRequired: false,
   auth0Logout: true,
   secret: process.env.AUTH0_SECRET,
-  baseURL: 'http://localhost:5000',
+  baseURL: process.env.BASE_URL,
   clientID: process.env.AUTH0_CLIENT_ID,
-  issuerBaseURL: process.env.AUTH0_ISSUER_BASE_URL
+  issuerBaseURL: process.env.AUTH0_DOMAIN
 };
 
 // auth router attaches /login, /logout, and /callback routes to the baseURL
