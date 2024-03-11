@@ -74,4 +74,3 @@ const LandingPage = () => {  const navigate = useNavigate();
 };
 
 export default LandingPage;
-}
