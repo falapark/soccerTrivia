@@ -36,7 +36,7 @@ const LandingPage = () => {  const navigate = useNavigate();
       return;
     }
     const callbackUrl = 'http://localhost:3000/callback';
-    window.location.href = `https://${domain}/authorize?response_type=code&client_id=${clientId}&redirect_uri=${callbackUrl}`;
+  
     window.location.href = `https://${domain}/authorize?response_type=code&client_id=${clientId}&redirect_uri=${serverUrl}/callback`;
   };
 
