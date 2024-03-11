@@ -2,11 +2,13 @@ import express from 'express';
 import { auth } from 'express-openid-connect';
 import morgan from 'morgan';
 import cors from 'cors';
-import {config} from 'dotenv';
+import dotenv from 'dotenv';
 import router from './router/route.js';
 
 /**import connection file */
 import connect from './database/conn.js';
+
+dotenv.config();
 
 const app = express(); 
 
@@ -28,7 +30,6 @@ app.use(auth(authConfig));
 app.use (morgan('tiny'));
 app.use (cors());
 app.use(express.json());
-config();
 
 /**application port */
 
