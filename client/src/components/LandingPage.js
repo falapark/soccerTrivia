@@ -24,8 +24,8 @@ const leaderboardData = [
 const LandingPage = () => {  const navigate = useNavigate();
 
   const handleLogin = () => {
-    // Redirect to the server's login route
-    window.location.href = `${process.env.REACT_APP_SERVER_URL}/login`;
+    // Redirect to the server's login route using the correct environment variable
+    window.location.href = `${process.env.REACT_APP_AUTH0_DOMAIN}/login`;
   };
 
   return (
