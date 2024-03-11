@@ -71,7 +71,6 @@ const LandingPage = () => {  const navigate = useNavigate();
       </div>
       <div className="category-section">
         <h2>Quiz Categories</h2>
-        <p>Click on a category below to start the quiz!</p>
         <div className="category-grid">
           {categories.map((category, index) => (
             <Link to="/main" className={`category-card ${category.class}`} key={index}>
@@ -80,7 +79,6 @@ const LandingPage = () => {  const navigate = useNavigate();
           ))}
         </div>
       </div>
-      <button onClick={handleLogin}>Log In</button>
     </div>
   );
 };
