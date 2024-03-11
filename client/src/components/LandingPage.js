@@ -21,13 +21,6 @@ const leaderboardData = [
   // ... other leaderboard entries
 ];
 
-const LandingPage = () => {  const navigate = useNavigate();
-
-  const handleLogin = () => {
-    // Redirect to the server's login route using the correct environment variable
-    window.location.href = `${process.env.REACT_APP_AUTH0_DOMAIN}/login`;
-  };
-
   return (
     <div className="landing-page">
       <div className="intro-section">
@@ -66,9 +59,6 @@ const LandingPage = () => {  const navigate = useNavigate();
           ))}
         </div>
       </div>
-      <button onClick={handleLogin}>Log In</button>
     </div>
   );
-};
 
-export default LandingPage;
