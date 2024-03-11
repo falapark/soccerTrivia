@@ -24,12 +24,15 @@ const leaderboardData = [
 const LandingPage = () => {  const navigate = useNavigate();
 
   const handleLogin = () => {
-    // Redirect to the server's login route using the correct environment variable
+    // Check if environment variables are set
     const domain = process.env.REACT_APP_AUTH0_DOMAIN;
     const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
     const serverUrl = process.env.REACT_APP_SERVER_URL;
     if (!domain || !clientId || !serverUrl) {
-      console.error('Environment variables REACT_APP_AUTH0_DOMAIN, REACT_APP_AUTH0_CLIENT_ID, or REACT_APP_SERVER_URL are not set.');
+      console.error(`Missing environment variables: 
+        REACT_APP_AUTH0_DOMAIN=${domain}, 
+        REACT_APP_AUTH0_CLIENT_ID=${clientId}, 
+        REACT_APP_SERVER_URL=${serverUrl}`);
       return;
     }
     window.location.href = `https://${domain}/authorize?response_type=code&client_id=${clientId}&redirect_uri=${serverUrl}/callback`;
