@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import '../styles/landingPage.css';
 
@@ -23,24 +24,9 @@ const leaderboardData = [
 const LandingPage = () => {  const navigate = useNavigate();
 
   const handleLogin = () => {
-    // Check if environment variables are set
-    const domain = process.env.REACT_APP_AUTH0_DOMAIN;
-    const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
-    const serverUrl = process.env.REACT_APP_SERVER_URL;
-    if (!domain || !clientId || !serverUrl) {
-      console.error(`Missing environment variables: 
-        REACT_APP_AUTH0_DOMAIN=${domain}, 
-        REACT_APP_AUTH0_CLIENT_ID=${clientId}, 
-        REACT_APP_SERVER_URL=${serverUrl}`);
-      return;
-    }
-    const callbackUrl = 'http://localhost:3000/callback';
-  
-    window.location.href = `https://${domain}/authorize?response_type=code&client_id=${clientId}&redirect_uri=${serverUrl}/callback`;
+    // Redirect to the server's login route using the correct environment variable
+    window.location.href = `${process.env.REACT_APP_AUTH0_DOMAIN}/login`;
   };
-
-  // ... rest of the component
-  // ... rest of the component (this comment should be removed or moved inside the function)
 
   return (
     <div className="landing-page">
@@ -71,6 +57,7 @@ const LandingPage = () => {  const navigate = useNavigate();
       </div>
       <div className="category-section">
         <h2>Quiz Categories</h2>
+        <p>Click on a category below to start the quiz!</p>
         <div className="category-grid">
           {categories.map((category, index) => (
             <Link to="/main" className={`category-card ${category.class}`} key={index}>
@@ -79,6 +66,7 @@ const LandingPage = () => {  const navigate = useNavigate();
           ))}
         </div>
       </div>
+      <button onClick={handleLogin}>Log In</button>
     </div>
   );
 };
