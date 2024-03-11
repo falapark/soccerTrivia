@@ -24,8 +24,8 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <div className="intro-section">
-        <h1>Soccer Quiz Challenge</h1>
-        <p>Think you know soccer? Take on the challenge and climb the leaderboard!</p>
+        <h1 className="animated-title">Soccer Quiz Challenge</h1>
+        <p className="animated-tagline">Think you know soccer? Take on the challenge and climb the leaderboard!</p>
       </div>
       <div className="leaderboard-section">
         <h2>Leaderboard</h2>
