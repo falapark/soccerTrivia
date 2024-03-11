@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import '../styles/landingPage.css';
@@ -21,6 +21,7 @@ const leaderboardData = [
   // ... other leaderboard entries
 ];
 
+const LandingPage = () => {
   return (
     <div className="landing-page">
       <div className="intro-section">
@@ -61,4 +62,7 @@ const leaderboardData = [
       </div>
     </div>
   );
+};
+
+export default LandingPage;
 
