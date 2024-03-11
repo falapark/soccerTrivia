@@ -25,9 +25,17 @@ const LandingPage = () => {  const navigate = useNavigate();
 
   const handleLogin = () => {
     // Redirect to the server's login route using the correct environment variable
-    window.location.href = `https://${process.env.REACT_APP_AUTH0_DOMAIN}/authorize?response_type=code&client_id=${process.env.REACT_APP_AUTH0_CLIENT_ID}&redirect_uri=${process.env.REACT_APP_SERVER_URL}/callback`;
+    const domain = process.env.REACT_APP_AUTH0_DOMAIN;
+    const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
+    const serverUrl = process.env.REACT_APP_SERVER_URL;
+    if (!domain || !clientId || !serverUrl) {
+      console.error('Environment variables REACT_APP_AUTH0_DOMAIN, REACT_APP_AUTH0_CLIENT_ID, or REACT_APP_SERVER_URL are not set.');
+      return;
+    }
+    window.location.href = `https://${domain}/authorize?response_type=code&client_id=${clientId}&redirect_uri=${serverUrl}/callback`;
   };
 
+  // ... rest of the component
   // ... rest of the component (this comment should be removed or moved inside the function)
 
   return (
