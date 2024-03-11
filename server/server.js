@@ -1,29 +1,15 @@
 import express from 'express';
-import { auth } from 'express-openid-connect';
 import morgan from 'morgan';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import router from './router/route.js';
-
-/**import connection file */
-import connect from './database/conn.js';
+import connectDB from './database/conn.js';
 
 dotenv.config();
 
-const app = express(); 
-
-// Auth0 configuration
-const authConfig = {
-  authRequired: false,
-  auth0Logout: true,
-  secret: process.env.AUTH0_SECRET,
-  baseURL: 'http://localhost:3000',
-  clientID: process.env.AUTH0_CLIENT_ID,
-  issuerBaseURL: process.env.AUTH0_ISSUER_BASE_URL
-};
+const app = express();
 
 // auth router attaches /login, /logout, and /callback routes to the baseURL
-app.use(auth(authConfig));
 
 /**app middlewares */
 
@@ -33,7 +19,7 @@ app.use(express.json());
 
 /**application port */
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 5000;
 
 app.use("/api" , router); /**APIS */
 
@@ -43,19 +29,18 @@ app.use("/api" , router); /**APIS */
 
 /**routes */
 
-app.get('/', (req, res) => {
-  res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
-})
+// Original routes before Auth0 integration
 
 
 /**start server only when we have valid connection */
 
-connect().then(()=>{
+connectDB().then(()=>{
     try {
         app.listen(port, ()=>{
-            console.log(`Server connected to htttp://localhost:${port}`)
+            console.log(`Server connected to http://localhost:${port}`)
         });
     } catch (error) {
+        console.log("cannot connect to the server")
         console.log("cannot coonect to the server")
     } 
 }).catch((error)=>{
