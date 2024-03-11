@@ -1,4 +1,5 @@
 import express from 'express';
+import { auth } from 'express-openid-connect';
 import morgan from 'morgan';
 import cors from 'cors';
 import {config} from 'dotenv';
@@ -8,6 +9,19 @@ import router from './router/route.js';
 import connect from './database/conn.js';
 
 const app = express(); 
+
+// Auth0 configuration
+const authConfig = {
+  authRequired: false,
+  auth0Logout: true,
+  secret: process.env.AUTH0_SECRET,
+  baseURL: process.env.BASE_URL,
+  clientID: process.env.AUTH0_CLIENT_ID,
+  issuerBaseURL: process.env.AUTH0_ISSUER_BASE_URL
+};
+
+// auth router attaches /login, /logout, and /callback routes to the baseURL
+app.use(auth(authConfig));
 
 /**app middlewares */
 
@@ -28,12 +42,8 @@ app.use("/api" , router); /**APIS */
 
 /**routes */
 
-app.get ('/',(req,res)=>{
-    try {
-        res.json('Get Request')
-    } catch (error) {
-        res.json(error)
-    }
+app.get('/', (req, res) => {
+  res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
 })
 
 
