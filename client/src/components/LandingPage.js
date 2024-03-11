@@ -24,8 +24,13 @@ const leaderboardData = [
 const LandingPage = () => {  const navigate = useNavigate();
 
   const handleLogin = () => {
-    // Redirect to the server's login route
-    window.location.href = `${process.env.REACT_APP_SERVER_URL}/login`;
+    // Redirect to the server's login route, ensure REACT_APP_SERVER_URL is set in your .env file
+    const serverUrl = process.env.REACT_APP_SERVER_URL;
+    if (!serverUrl) {
+      console.error('REACT_APP_SERVER_URL is not set in your .env file.');
+      return;
+    }
+    window.location.href = `${serverUrl}/login`;
   };
 
   return (
