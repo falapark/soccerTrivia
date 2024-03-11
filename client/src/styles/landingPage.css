@@ -20,7 +20,8 @@
   text-align: center;
   color: #E6E6E6;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-  margin: 20px 0; /* Added margin to the top and bottom of the title */
+  margin: 20px; /* Added margin to the top and bottom of the title */
+  padding-top: 20px
 }
 
 
@@ -194,6 +195,7 @@ p{
   text-align: center;
   margin-top: 0;
   padding-top: 0;
+  color: rgba(255, 255, 255, 0.9);
   letter-spacing: 0.05em; /* Increased letter spacing for a more modern and airy feel */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for tagline */
 }
