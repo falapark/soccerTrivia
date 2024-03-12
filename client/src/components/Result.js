@@ -15,7 +15,10 @@ import { usePublishResult } from '../hooks/setResult';
 export default function Result() {
 
     const dispatch = useDispatch ()
-    const {questions : {queue, answers}, result: {result, userId}} = useSelector (state => state)
+    const queue = useSelector (state => state.questions.queue)
+    const answers = useSelector (state => state.questions.answers)
+    const result = useSelector (state => state.result.result)
+    const userId = useSelector (state => state.result.userId)
 
     useEffect(() => {
         console.log(flag)
@@ -41,6 +44,7 @@ export default function Result() {
         <div className='container'>
             <h1 className='title text-light'>Quiz Application</h1>
             
+
             <div className='result flex-center'>
                 <div className='flex'>
                     <span>Username</span>
@@ -78,4 +82,5 @@ export default function Result() {
             </div>
         </div>
     );
+}
 }
