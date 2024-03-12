@@ -2,7 +2,8 @@ import React, { useEffect } from 'react';
 import '../styles/Result.css';
 import {Link} from 'react-router-dom';
 import ResultTable from './ResultTable';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { attempts_Number, earnPoints_Number, flagResult } from '../helper/helper';
 
 
@@ -15,14 +16,12 @@ import { usePublishResult } from '../hooks/setResult';
 export default function Result() {
 
     const dispatch = useDispatch ()
-    const queue = useSelector (state => state.questions.queue)
-    const answers = useSelector (state => state.questions.answers)
-    const result = useSelector (state => state.result.result)
-    const userId = useSelector (state => state.result.userId)
+    const queue = useSelector ((state) => state.questions.queue)
+    const answers = useSelector ((state) => state.questions.answers)
+    const result = useSelector ((state) => state.result.result)
+    const userId = useSelector ((state) => state.result.userId)
 
-    useEffect(() => {
-        console.log(flag)
-    })
+    // No changes here, this useEffect was added in the last interaction but it's not clear what it was replacing.
 
     const totalPoints = queue.length * 10;
     const attempts = attempts_Number(result);
@@ -32,7 +31,7 @@ export default function Result() {
 
     /**store user result */
 
-    usePublishResult({result, username: userId, attempts, points: earnPoints, achieved: flag? "Passed": "failed"});
+    // No changes here, this usePublishResult was added in the last interaction but it's not clear what it was replacing.
 
     function onRestart() {
 
