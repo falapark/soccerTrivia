@@ -12,14 +12,15 @@ export default function Main() {
 
     return(
     <div className='container'>
-        <h1 className="title text-light">Quiz Application</h1>
+        <h1 className="title text-light">Trivia Soccer</h1>
         ...
         <ol>
-            <li>You will be asked 10 questions one after another.</li>
-            <li>10 points is awarded for the correct answer.</li>
-            <li>Each question has three options. You can choose only one options.</li>
-            <li>You can review and change answers before the quiz finish.</li>
+            <li>You will be asked 20 questions one after another.</li>
+            <li>You will be awareded 1 point for correct answer</li>
+            <li>Each question has 4 options. You can choose only one options.</li>
+            <li>You can review and change answers before the quiz finishes.</li>
             <li>The result will be declared at the end of the quiz.</li>
+            <li>Enter a username and e-mail to register OR if you already have an account simply click log-in</li>
         </ol>
 
         <form id="form">
